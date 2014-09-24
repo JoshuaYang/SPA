@@ -1,0 +1,168 @@
+@import "../vendors/joshua.js/dev/less/all.less";
+@import "../vendors/bootstrap/less/bootstrap.less";
+
+*{
+	color: #545454;
+}
+
+.transition{
+	.transition(all .5s ease-in-out);
+}
+
+#menu{
+	background: #333;
+	border-bottom: none;
+	box-shadow: 0 10px rgba(0,0,0,0.2);
+
+	a{
+		font-size: 20px;
+		color: white !important;
+	}
+
+	li{
+		a{
+			&:hover{
+				color: #45b29a !important; 
+			}
+		}
+	}
+}
+
+.content-section{
+	padding: 3em 0;
+	overflow: hidden;
+}
+
+#home{
+	padding-top: 10em;
+	padding-bottom: 0;
+	background-color: #e0ebe8;
+
+	@media (min-width: @screen-md-min){
+		padding-top: 8em;
+	}
+	
+	.content-wrap{
+		.introduce{
+			text-align: center;
+			.introduce-wrap{
+				display: inline-block;
+				width: 220px;
+
+				@media (min-width: @screen-md-min) {
+					width: 350px;
+				}
+
+				img{
+					width: 100%;
+				}
+			}
+		}
+		p{
+			text-align: center;
+			color: #45b29a;
+			font-size: 1.5em;
+			margin: 1em 0 1.5em;
+		}
+	}
+
+	.land-wrap{
+		max-width: 800px;
+		margin: 0 auto;
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.row-first{
+		position: relative;
+
+		.cloud{
+			position: absolute;
+			width: 150px;
+			.transition(all 1s ease-in-out);
+
+			img{
+				width: 100%;
+			}
+		}
+
+		.cloud-left{
+			left: -6em;
+			bottom: -1em;
+
+			@media (min-width: @screen-md-min) {
+				left: 2em;
+				bottom: 8em;
+			}
+		}
+		.cloud-right{
+			right: -5em;
+			top: -3em;
+
+			@media (min-width: @screen-md-min) {
+				right: 3em;
+				top: 10em;
+			}
+		}
+	}
+}
+
+#about{
+	background-color: white;
+	
+	.article-first{
+		max-width: 460px;
+		margin: 0 auto;
+
+		.topic{
+			width: 150px;
+			margin: 0 auto;
+
+			@media (min-width: @screen-md-min) {
+				width: 180px;
+			}
+
+			img{
+				width: 100%;
+				.border-radius(50% 50%);
+			}
+		}
+
+		h3{
+			color: #45b29a;
+			text-align: center;
+			padding: 0.6em 0;
+		}
+
+		p{
+			text-align: center;
+			line-height: 26px;
+		}
+	}
+
+	.breaker{
+		margin: 30px auto 20px;
+		max-width: 100px;
+
+		.line{
+			background-image: url(../images/line-bg.png);
+			height: 6px;
+			width: 100%;
+
+			@media (-webkit-min-device-pixel-ratio: 1.5), not all, not all, (min-resolution: 1.5dppx){
+				background-image: url(../images/line-bg@2x.png);
+				background-size: auto 6px;
+			}
+		}
+	}
+
+	.cando{
+		h3{
+			font-size: 3em;
+			text-align: center;
+			color: #1e836c;
+		}
+	}
+}
