@@ -13,7 +13,7 @@
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" id="menu" role="navigation">
-      <div class="container">
+      <div class="container transition">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -27,7 +27,10 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#about">Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#about">Require</a></li>
+            <li><a href="#about">Concat</a></li>
           </ul>
         </div>
       </div>
@@ -65,7 +68,7 @@
     </section>
 
     <section class="content-section transition" id="about">
-        <div class="container">
+        <div class="container transition">
             <div class="row">
                 <div class="col-md-12">
                     <article class="article-first">
@@ -78,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <div class="container breaker">
+        <div class="container transition breaker">
             <div class="row">
                 <div class="col-md-12">
                     <div class="line"></div>
@@ -160,12 +163,133 @@
     </section>
 
     <section class="content-section transition" id="projects">
-        <div class="container-fluid project UT_Friskies">
-            <div class="container">
+        <div class="container-fluid project" id="UT_Simon">
+            <div class="container transition">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="cover">
+                            <img src="images/UT_Simon.jpg" alt="">
+                        </div>
+                        <h4>Simon Malls</h4>
+                        <div class="desc">
+                            <p>为Simon Malls做的宣传广告，也是由自己负责的第一个项目。全屏宽度响应式，支持IE8以上所有主流浏览器，以及不同版本的ipad、iphone、android设备（之后其余项目的自适应与兼容性都是如此）比较简单，主要的工作就是根据动画需求进行元素的排版；动画主要采用了淡入淡出与位移相结合，在IE8下做了动画退化处理。</p>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href=""=>GO TO SEE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid project" id="UT_Friskies">
+            <div class="container transition">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="cover">
                             <img src="images/UT_Friskies.jpg" alt="">
+                        </div>
+                        <h4>Friskies Grumpy Cat</h4>
+                        <div class="desc">
+                            <p>给Friskies做的一个猫粮广告，其中运用到了自己写的序列帧库，中央的猫会根据用户交互的不同，表现出不同的动画效果；视频运用遮罩做出了圆角效果，并针对低端设备做了退化。</p>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href=""=>GO TO SEE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid project" id="UT_Xbox">
+            <div class="container transition">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="cover">
+                            <img src="images/UT_Xbox.jpg" alt="">
+                        </div>
+                        <h4>Xbox</h4>
+                        <div class="desc">
+                            <p>为xbox360促销活动做的广告，也是第一次做响应式的广告；拖动下方的滑条时，画面中的图片会产生视差移动；支持触摸拖拽和临时中断交互。</p>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href=""=>GO TO SEE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid project" id="UT_Reebok">
+            <div class="container transition">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="cover">
+                            <img src="images/UT_Reebok.jpg" alt="">
+                        </div>
+                        <h4>Reebok Zquick</h4>
+                        <div class="desc">
+                            <p>为Reebok做的跑鞋广告，是做的最复杂的一个广告。不同尺寸的布局差异很大，在排版上花了三天的时间；动画交互也很复杂，有序列帧和元素放大同时需要满足的需求，并且性能要求也很高；在交互效果的实现上返工很多次，最后终于得以完成。</p>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href=""=>GO TO SEE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid project" id="UT_Microsoft_Cloud">
+            <div class="container transition">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="cover">
+                            <img src="images/UT_Microsoft_Cloud.jpg" alt="">
+                        </div>
+                        <h4>Microsoft Cloud</h4>
+                        <div class="desc">
+                            <p>为微软云做的广告，亮点是4条彩带的进场动画，运用了对人眼反应力的欺骗实现了拐弯的效果；在后期实现兼容性时遇到了像素无法对齐的问题，最终通过替换图片的方法解决了。</p>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href=""=>GO TO SEE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid project" id="UT_Shell">
+            <div class="container transition">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="cover">
+                            <img src="images/UT_Shell.jpg" alt="">
+                        </div>
+                        <h4>Shell Pennzoil</h4>
+                        <div class="desc">
+                            <p>为Pennzoil做的机油广告，总共分成三个场景，其中运用了大量动画和序列帧；在第一个场景中根据客户需求，运用了大量canvas交互，并且在桌面浏览器与触摸设备上有完全不同的表现。</p>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href=""=>GO TO SEE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid project" id="FP_reebok">
+            <div class="container transition">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="cover">
+                            <img src="images/FP_reebok.jpg" alt="">
+                        </div>
+                        <h4>Full Page Reebok</h4>
+                        <div class="desc">
+                            <p>为Reebok做的一个全屏宽高完全自适应的广告，使用了大量动画效果；总共有三个场景，其中第二个场景运用了slider效果，支持随机跳转和触摸滑动；由于是全屏宽高完全自适应，所以在排版上花费了很长时间，特别是在IE8和低端android设备上。</p>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href=""=>GO TO SEE</a>
                         </div>
                     </div>
                 </div>
@@ -173,8 +297,20 @@
         </div>
     </section>
 
-    <footer id="footer">
+    <section class="content-section transition" id="skill">
+        <h3>My Skills</h3>
         <div class="container">
+            <div class="row">
+                <div class="col-md-3">1</div>
+                <div class="col-md-3">2</div>
+                <div class="col-md-3">3</div>
+                <div class="col-md-3">4</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container transition">
             <div class="row">
                 <p>© 2014 Joshua Yang. All rights reserved.</p>
             </div>
