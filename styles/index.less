@@ -5,6 +5,10 @@
 	color: #545454;
 }
 
+.container {
+	//max-width: 970px;
+}
+
 .transition{
 	.transition(all .5s ease-in-out);
 }
@@ -39,7 +43,7 @@ a{
 	h3{
 		font-size: 3em;
 		text-align: center;
-		color: #1e836c;
+		color: #000;
 		margin-bottom: 20px;
 	}
 }
@@ -122,6 +126,7 @@ a{
 
 #about{
 	background-color: white;
+	padding-bottom: 0;
 	
 	.article-first{
 		max-width: 460px;
@@ -214,7 +219,8 @@ a{
 }
 
 #projects{
-	padding: 0;
+	padding-bottom: 0;
+
 	.project{
 		padding: 4em 0;
 
@@ -355,6 +361,38 @@ a{
 				background-color: #89898B;
 			}
 		}
+	}
+}
+
+#skill{
+
+}
+
+#intention{
+	background-color: #f0f0f0;
+
+	h3{
+		color: #000;
+	}
+
+	.row{
+		>[class*=col-md-]{
+			max-width: 500px;
+			margin: 0 auto;
+
+			@media (min-width: @screen-md-min){
+				max-width: none;
+			}
+		}
+	}
+
+	h4{
+		background: url('../images/tick-round.svg') 0 6px no-repeat;
+		background-size: 28px auto;
+		font-weight: normal;
+		padding: 7px 0;
+		padding-left: 40px;
+		line-height: 26px;
 	}
 }
 
