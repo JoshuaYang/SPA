@@ -7912,5 +7912,69 @@ button.close {
   font-size: 3em;
   text-align: center;
   color: #1e836c;
+  margin-bottom: 20px;
+}
+/* line 170, index.less */
+#about .cando .skills > [class*=col-md-] {
+  padding-bottom: 30px;
+  min-height: 300px;
+}
+/* line 174, index.less */
+#about .cando .skills .skill {
+  padding: 0 10px;
+}
+/* line 177, index.less */
+#about .cando .skills .skill .icon {
+  margin: 0 auto;
+  width: 120px;
+}
+/* line 181, index.less */
+#about .cando .skills .skill .icon img {
+  width: 100%;
+}
+/* line 185, index.less */
+#about .cando .skills .skill h4 {
+  color: #45b29a;
+  text-align: center;
+}
+/* line 189, index.less */
+#about .cando .skills .skill .desc {
+  max-width: 320px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* line 194, index.less */
+#about .cando .skills .skill .desc p {
+  line-height: 28px;
+}
+/* line 204, index.less */
+#projects {
+  padding: 0;
+}
+/* line 206, index.less */
+#projects .project {
+  background-color: #7dcc93;
+  padding: 4em 0;
+}
+/* line 210, index.less */
+#projects .project .cover {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 3em;
+}
+/* line 214, index.less */
+#projects .project .cover img {
+  width: 100%;
+}
+/* line 221, index.less */
+#footer {
+  padding: 3em 0;
+  background-color: #e0ebe8;
+}
+/* line 225, index.less */
+#footer p {
+  margin: 0;
+  text-align: center;
+  color: #666;
 }
 /*# sourceMappingURL=index.css.map */
