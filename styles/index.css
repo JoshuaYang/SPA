@@ -8164,13 +8164,14 @@ a {
   padding: 7px 0;
   padding-left: 40px;
   line-height: 26px;
+  font-size: 16px;
 }
-/* line 399, index.less */
+/* line 400, index.less */
 #footer {
   padding: 3em 0;
   background-color: #e0ebe8;
 }
-/* line 403, index.less */
+/* line 404, index.less */
 #footer p {
   margin: 0;
   text-align: center;
