@@ -10222,11 +10222,11 @@ body {
 }
 /* line 302, index.less */
 #projects .project .btn-wrap a:hover span {
-  -moz-transform: translate(350%, 0);
-  -webkit-transform: translate(350%, 0);
-  -ms-transform: translate(350%, 0);
-  -o-transform: translate(350%, 0);
-  transform: translate(350%, 0);
+  -moz-transform: translate(600%, 0);
+  -webkit-transform: translate(600%, 0);
+  -ms-transform: translate(600%, 0);
+  -o-transform: translate(600%, 0);
+  transform: translate(600%, 0);
 }
 @media (min-width: 992px) {
   /* line 307, index.less */
