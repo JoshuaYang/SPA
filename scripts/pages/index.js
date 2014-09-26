@@ -16,9 +16,9 @@ define(['jquery',
 			easing: 'ease'
 		});
 
-		// SmoothMouseWheel.enable({
-		// 	spring: .4,
-	 //        duration: 900,
-	 //        maxDetail: 40
-		// });
+		SmoothMouseWheel.enable({
+			spring: .4,
+	        duration: 900,
+	        maxDetail: 40
+		});
 });
