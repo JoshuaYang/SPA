@@ -16,6 +16,7 @@
     "joshua.js": "*",
     "font-awesome": "~4.1.0",
     "bootstrap": "~3.2.0",
-    "chartjs": "~0.2.0"
+    "chartjs": "~0.2.0",
+    "animsition": "~3.3.1"
   }
 }

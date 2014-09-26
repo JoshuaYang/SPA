@@ -9886,10 +9886,10 @@ a {
 }
 /* line 28, index.less */
 body {
-  -webkit-animation: fadeIn 2s ease;
-  -moz-animation: fadeIn 2s ease;
-  -ms-animation: fadeIn 2s ease;
-  animation: fadeIn 2s ease;
+  -webkit-animation: fadeIn 1.5s ease;
+  -moz-animation: fadeIn 1.5s ease;
+  -ms-animation: fadeIn 1.5s ease;
+  animation: fadeIn 1.5s ease;
 }
 /* line 32, index.less */
 #menu {
@@ -10177,6 +10177,7 @@ body {
 }
 /* line 274, index.less */
 #projects .project .btn-wrap a {
+  position: relative;
   text-align: center;
   display: block;
   padding: .75em 2em;
@@ -10189,44 +10190,55 @@ body {
   -ms-background-clip: padding-box;
   border-radius: 3px;
   background-clip: padding-box;
+  overflow: hidden;
+}
+/* line 283, index.less */
+#projects .project .btn-wrap a span {
+  display: inline-block;
+  vertical-align: middle;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 288, index.less */
+#projects .project .btn-wrap a:before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 2.7em;
+  left: -100%;
+  top: 0;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 299, index.less */
+#projects .project .btn-wrap a:hover:before {
+  left: 0;
+}
+/* line 302, index.less */
+#projects .project .btn-wrap a:hover span {
+  -moz-transform: translate(350%, 0);
+  -webkit-transform: translate(350%, 0);
+  -ms-transform: translate(350%, 0);
+  -o-transform: translate(350%, 0);
+  transform: translate(350%, 0);
 }
 @media (min-width: 992px) {
-  /* line 281, index.less */
+  /* line 307, index.less */
   #projects .project .btn-wrap a {
     display: inline-block;
   }
 }
-/* line 289, index.less */
-#projects #UT_Friskies {
-  background-color: #66A7D5;
-}
-/* line 292, index.less */
-#projects #UT_Friskies .btn-wrap a {
-  color: #3e90ca;
-  background: #A8D7F9;
-}
-/* line 296, index.less */
-#projects #UT_Friskies .btn-wrap a:hover {
-  background-color: #78c1f6;
-}
-/* line 302, index.less */
-#projects #UT_Xbox {
-  background-color: #7dcc93;
-}
-/* line 305, index.less */
-#projects #UT_Xbox .btn-wrap a {
-  color: #64A391;
-  background: #9DE5A3;
-}
-/* line 309, index.less */
-#projects #UT_Xbox .btn-wrap a:hover {
-  background-color: #E7FFB6;
-}
-/* line 315, index.less */
+/* line 314, index.less */
 #projects #UT_Simon {
   background-color: #FFFDF5;
 }
-/* line 318, index.less */
+/* line 317, index.less */
 #projects #UT_Simon h4,
 #projects #UT_Simon p {
   color: #545454;
@@ -10236,76 +10248,130 @@ body {
   color: #8c6c07;
   background: #FFF0DC;
 }
-/* line 325, index.less */
+/* line 324, index.less */
+#projects #UT_Simon .btn-wrap a span {
+  color: #8c6c07;
+}
+/* line 330, index.less */
 #projects #UT_Simon .btn-wrap a:hover {
   background-color: #E2E8FF;
 }
-/* line 331, index.less */
+/* line 336, index.less */
+#projects #UT_Friskies {
+  background-color: #66A7D5;
+}
+/* line 339, index.less */
+#projects #UT_Friskies .btn-wrap a {
+  color: #3e90ca;
+  background: #A8D7F9;
+}
+/* line 341, index.less */
+#projects #UT_Friskies .btn-wrap a span {
+  color: #3e90ca;
+}
+/* line 346, index.less */
+#projects #UT_Friskies .btn-wrap a:hover {
+  background-color: #78c1f6;
+}
+/* line 352, index.less */
+#projects #UT_Xbox {
+  background-color: #7dcc93;
+}
+/* line 355, index.less */
+#projects #UT_Xbox .btn-wrap a {
+  color: #64A391;
+  background: #9DE5A3;
+}
+/* line 357, index.less */
+#projects #UT_Xbox .btn-wrap a span {
+  color: #64A391;
+}
+/* line 362, index.less */
+#projects #UT_Xbox .btn-wrap a:hover {
+  background-color: #E7FFB6;
+}
+/* line 368, index.less */
 #projects #UT_Reebok {
   background-color: #f76160;
 }
-/* line 334, index.less */
+/* line 371, index.less */
 #projects #UT_Reebok .btn-wrap a {
   color: #c30d06;
   background: #f9554f;
 }
-/* line 338, index.less */
+/* line 373, index.less */
+#projects #UT_Reebok .btn-wrap a span {
+  color: #c30d06;
+}
+/* line 378, index.less */
 #projects #UT_Reebok .btn-wrap a:hover {
   background-color: #f83d37;
 }
-/* line 344, index.less */
+/* line 384, index.less */
 #projects #UT_Microsoft_Cloud {
   background-color: #31355b;
 }
-/* line 347, index.less */
+/* line 387, index.less */
 #projects #UT_Microsoft_Cloud .btn-wrap a {
   color: #fff;
   background: #4299ed;
 }
-/* line 351, index.less */
+/* line 389, index.less */
+#projects #UT_Microsoft_Cloud .btn-wrap a span {
+  color: #fff;
+}
+/* line 394, index.less */
 #projects #UT_Microsoft_Cloud .btn-wrap a:hover {
   background-color: #1680e6;
 }
-/* line 357, index.less */
+/* line 400, index.less */
 #projects #UT_Shell {
   background-color: #21364b;
 }
-/* line 360, index.less */
+/* line 403, index.less */
 #projects #UT_Shell .btn-wrap a {
   color: #fff;
   background: #005361;
 }
-/* line 364, index.less */
+/* line 405, index.less */
+#projects #UT_Shell .btn-wrap a span {
+  color: #fff;
+}
+/* line 410, index.less */
 #projects #UT_Shell .btn-wrap a:hover {
   background-color: #00272e;
 }
-/* line 370, index.less */
+/* line 416, index.less */
 #projects #FP_reebok {
   background-color: #000;
 }
-/* line 373, index.less */
+/* line 419, index.less */
 #projects #FP_reebok .btn-wrap a {
   color: #ccc;
   background: #353434;
 }
-/* line 377, index.less */
+/* line 421, index.less */
+#projects #FP_reebok .btn-wrap a span {
+  color: #ccc;
+}
+/* line 426, index.less */
 #projects #FP_reebok .btn-wrap a:hover {
   background-color: #89898B;
 }
-/* line 388, index.less */
+/* line 437, index.less */
 #intention {
   background-color: #f0f0f0;
 }
-/* line 391, index.less */
+/* line 440, index.less */
 #intention .container {
   max-width: 992px;
 }
-/* line 395, index.less */
+/* line 444, index.less */
 #intention .itenWrap {
   width: 360px;
   margin: 0 auto;
 }
-/* line 399, index.less */
+/* line 448, index.less */
 #intention h4 {
   background: url('../images/tick-round.svg') 0 6px no-repeat;
   background-size: 28px auto;
@@ -10315,19 +10381,19 @@ body {
   line-height: 26px;
   font-size: 16px;
 }
-/* line 411, index.less */
+/* line 460, index.less */
 #contact ul {
   text-align: center;
   font-size: 16px;
   line-height: 34px;
   margin: 1.4em 0;
 }
-/* line 418, index.less */
+/* line 467, index.less */
 #contact .btn-col {
   padding: 0 10px;
   margin: 1.2em 0;
 }
-/* line 423, index.less */
+/* line 472, index.less */
 #contact .contact-btn {
   text-decoration: none;
   max-width: 200px;
@@ -10335,12 +10401,12 @@ body {
   display: block;
   cursor: pointer;
 }
-/* line 431, index.less */
+/* line 480, index.less */
 #contact .contact-btn:hover i,
 #contact .contact-btn:hover span {
   color: #3ea08a;
 }
-/* line 436, index.less */
+/* line 485, index.less */
 #contact .contact-btn i,
 #contact .contact-btn span {
   color: #1b7f69;
@@ -10351,31 +10417,31 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 441, index.less */
+/* line 490, index.less */
 #contact .contact-btn span {
   font-size: 16px;
   display: inline-block;
   margin-left: 12px;
 }
-/* line 449, index.less */
+/* line 498, index.less */
 #footer {
   padding: 3em 0;
   background-color: #e0ebe8;
 }
-/* line 453, index.less */
+/* line 502, index.less */
 #footer [class*=col-] {
   text-align: center;
 }
-/* line 460, index.less */
+/* line 509, index.less */
 #footer .icons {
   margin-bottom: 15px;
 }
-/* line 464, index.less */
+/* line 513, index.less */
 #footer p {
   margin: 0;
   color: #45b29a;
 }
-/* line 470, index.less */
+/* line 519, index.less */
 #footer a .fa-circle {
   color: #45b29a;
   -moz-transition: all 0.3s ease-in-out;
@@ -10384,7 +10450,7 @@ body {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 475, index.less */
+/* line 524, index.less */
 #footer a:hover {
   -moz-transform: translate(0, -5px) !important;
   -webkit-transform: translate(0, -5px) !important;
@@ -10392,52 +10458,52 @@ body {
   -o-transform: translate(0, -5px) !important;
   transform: translate(0, -5px) !important;
 }
-/* line 477, index.less */
+/* line 526, index.less */
 #footer a:hover .fa-circle {
   color: #1a443b;
 }
 @-webkit-keyframes fadeIn {
-  /* line 488, index.less */
+  /* line 537, index.less */
   0% {
     opacity: 0;
   }
-  /* line 491, index.less */
+  /* line 540, index.less */
   100% {
     opacity: 1;
   }
 }
 @-moz-keyframes fadeIn {
-  /* line 496, index.less */
+  /* line 545, index.less */
   0% {
     opacity: 0;
   }
-  /* line 499, index.less */
+  /* line 548, index.less */
   100% {
     opacity: 1;
   }
 }
 @-o-keyframes fadeIn {
-  /* line 504, index.less */
+  /* line 553, index.less */
   0% {
     opacity: 0;
   }
-  /* line 507, index.less */
+  /* line 556, index.less */
   100% {
     opacity: 1;
   }
 }
 @keyframes fadeIn {
-  /* line 512, index.less */
+  /* line 561, index.less */
   0% {
     opacity: 0;
   }
-  /* line 515, index.less */
+  /* line 564, index.less */
   100% {
     opacity: 1;
   }
 }
 @-webkit-keyframes cloudAnimate {
-  /* line 523, index.less */
+  /* line 572, index.less */
   0% {
     -moz-transform: translate(30px, 0);
     -webkit-transform: translate(30px, 0);
@@ -10445,7 +10511,7 @@ body {
     -o-transform: translate(30px, 0);
     transform: translate(30px, 0);
   }
-  /* line 526, index.less */
+  /* line 575, index.less */
   50% {
     -moz-transform: translate(-30px, 0);
     -webkit-transform: translate(-30px, 0);
@@ -10453,7 +10519,7 @@ body {
     -o-transform: translate(-30px, 0);
     transform: translate(-30px, 0);
   }
-  /* line 529, index.less */
+  /* line 578, index.less */
   100% {
     -moz-transform: translate(30px, 0);
     -webkit-transform: translate(30px, 0);

@@ -1,6 +1,6 @@
 @import "../vendors/joshua.js/dev/less/all.less";
 @import "../vendors/bootstrap/less/bootstrap.less";
-@import "../vendors/font-awesome/less/font-awesome.less";   
+@import "../vendors/font-awesome/less/font-awesome.less";
 @import "font.less";
 
 *{
@@ -26,7 +26,7 @@ a{
 }
 
 body{
-	.animation(fadeIn, 2s, ease);
+	.animation(fadeIn, 1.5s, ease);
 }
 
 #menu{
@@ -272,11 +272,37 @@ body{
 			margin-top: 25px;
 
 			a{
+				position: relative;
 				text-align: center;
 				display: block;
 				padding: .75em 2em;
 				text-decoration: none;
 				.border-radius(3px);
+				overflow: hidden;
+
+				span{
+					display: inline-block;
+					vertical-align: middle;
+					.transition(all 0.3s ease);
+				}
+				&:before{
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					line-height: 2.7em;
+					left: -100%;
+					top: 0;
+					.transition(all 0.3s ease);
+				}
+
+				&:hover{
+					&:before{
+						left: 0;
+					}
+					span{
+						.translate(350%,0);
+					}
+				}
 
 				@media (min-width: @screen-md-min){
 					display: inline-block;
@@ -285,12 +311,36 @@ body{
 		}
 	}
 
+	#UT_Simon{
+		background-color: #FFFDF5;
+		
+		h4, p{
+			color: #545454;
+		}
+
+		.btn-wrap a{
+			color: #8c6c07;
+
+			span{
+				color: #8c6c07;
+			}
+
+			background: #FFF0DC;
+
+			&:hover{
+				background-color: #E2E8FF;
+			}
+		}
+	}
 
 	#UT_Friskies{
 		background-color: #66A7D5;
 
 		.btn-wrap a{
 			color: #3e90ca;
+			span{
+				color: #3e90ca;
+			}
 			background: #A8D7F9;
 
 			&:hover{
@@ -304,26 +354,13 @@ body{
 
 		.btn-wrap a{
 			color: #64A391;
+			span{
+				color: #64A391;
+			}
 			background: #9DE5A3;//9DFFB8
 
 			&:hover{
 				background-color: #E7FFB6;//BDFF99
-			}
-		}
-	}
-
-	#UT_Simon{
-		background-color: #FFFDF5;
-		
-		h4, p{
-			color: #545454;
-		}
-		.btn-wrap a{
-			color: #8c6c07;
-			background: #FFF0DC;
-
-			&:hover{
-				background-color: #E2E8FF;
 			}
 		}
 	}
@@ -333,6 +370,9 @@ body{
 
 		.btn-wrap a{
 			color: #c30d06;
+			span{
+				color: #c30d06;
+			}
 			background: #f9554f;//f9554f
 
 			&:hover{
@@ -346,6 +386,9 @@ body{
 
 		.btn-wrap a{
 			color: #fff;
+			span{
+				color: #fff;
+			}
 			background: #4299ed;
 
 			&:hover{
@@ -359,6 +402,9 @@ body{
 
 		.btn-wrap a{
 			color: #fff;
+			span{
+				color: #fff;
+			}
 			background: #005361;
 
 			&:hover{
@@ -372,6 +418,9 @@ body{
 
 		.btn-wrap a{
 			color: #ccc;
+			span{
+				color: #ccc;
+			}
 			background: #353434;
 
 			&:hover{
