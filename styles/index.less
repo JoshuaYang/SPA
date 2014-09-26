@@ -1,20 +1,32 @@
 @import "../vendors/joshua.js/dev/less/all.less";
 @import "../vendors/bootstrap/less/bootstrap.less";
+@import "../vendors/font-awesome/less/font-awesome.less";   
+@import "font.less";
 
 *{
 	color: #545454;
 }
 
-.container {
-	//max-width: 970px;
+li{
+	list-style: none;
 }
 
 .transition{
 	.transition(all .5s ease-in-out);
 }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a {
+	font-family: 'brandon-grotesque','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial','Lucida Grande','sans-serif';
+	font-weight: 500;
+}
+
 a{
 	.transition(all .3s ease-in-out);
+	font-weight: normal;
+}
+
+body{
+	.animation(fadeIn, 2s, ease);
 }
 
 #menu{
@@ -41,9 +53,10 @@ a{
 	overflow: hidden;
 
 	h3{
+		
 		font-size: 3em;
 		text-align: center;
-		color: #000;
+		color: #1e836c;//#45b29a
 		margin-bottom: 20px;
 	}
 }
@@ -76,8 +89,9 @@ a{
 		p{
 			text-align: center;
 			color: #45b29a;
-			font-size: 1.5em;
+			font-size: 1.8em;
 			margin: 1em 0 1.5em;
+			font-family: 'brandon-grotesque','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial','Lucida Grande','sans-serif';
 		}
 	}
 
@@ -97,6 +111,7 @@ a{
 			position: absolute;
 			width: 150px;
 			.transition(all 1s ease-in-out);
+			
 
 			img{
 				width: 100%;
@@ -106,6 +121,7 @@ a{
 		.cloud-left{
 			left: -6em;
 			bottom: -1em;
+			.animation(cloudAnimate, 5s, ease, infinite);
 
 			@media (min-width: @screen-md-min) {
 				left: 2em;
@@ -115,6 +131,7 @@ a{
 		.cloud-right{
 			right: -5em;
 			top: -3em;
+			.animation(cloudAnimate, 6s, ease, 1s, infinite);
 
 			@media (min-width: @screen-md-min) {
 				right: 3em;
@@ -239,7 +256,7 @@ a{
 			text-align: center;
 			color: white;
 			margin: 24px 0;
-			font-size: 24px;
+			font-size: 28px;
 		}
 		.desc{
 			max-width: 700px;
@@ -370,22 +387,15 @@ a{
 
 #intention{
 	background-color: #f0f0f0;
-
-	h3{
-		color: #000;
+	
+	.container{
+		max-width: @screen-md-min;
 	}
-
-	.row{
-		>[class*=col-md-]{
-			max-width: 500px;
-			margin: 0 auto;
-
-			@media (min-width: @screen-md-min){
-				max-width: none;
-			}
-		}
+	
+	.itenWrap{
+		width: 360px;
+		margin: 0 auto;
 	}
-
 	h4{
 		background: url('../images/tick-round.svg') 0 6px no-repeat;
 		background-size: 28px auto;
@@ -397,13 +407,126 @@ a{
 	}
 }
 
+#contact{
+	ul{
+		text-align: center;
+		font-size: 16px;
+		line-height: 34px;
+		margin: 1.4em 0;
+	}
+
+	.btn-col{
+		padding: 0 10px;
+		margin: 1.2em 0;
+	}
+
+	.contact-btn{
+		text-decoration: none;
+		max-width: 200px;
+		margin: 0 auto;
+		display: block;
+		cursor: pointer;
+
+		&:hover{
+			i, span{
+				color: #3ea08a;
+			}
+		}
+
+		i, span{
+			color: #1b7f69;
+			vertical-align: middle;
+			.transition(all 0.3s ease);
+		}
+		span{
+			font-size: 16px;
+			display: inline-block;
+			margin-left: 12px;
+		}
+	}
+}
+
 #footer{
 	padding: 3em 0;
 	background-color: #e0ebe8;
 
+	[class*=col-]{
+		text-align: center;
+	}
+
+	.text{
+
+	}
+	.icons{
+		margin-bottom: 15px;
+	}
+
 	p{
 		margin: 0;
-		text-align: center;
-		color: #666;
+		color: #45b29a;
 	}
+	
+	a{
+		.fa-circle{
+			color: #45b29a;
+			.transition(all .3s ease-in-out);
+		}
+
+		&:hover{
+			.translate(0,-5px) !important;
+			.fa-circle{
+				color: #1a443b;
+			}
+		}
+	}
+}
+
+
+
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@-webkit-keyframes cloudAnimate {
+  0% {
+    .translate(30px, 0);
+  }
+  50% {
+	.translate(-30px, 0);
+  }
+  100% {
+    .translate(30px, 0);
+  }
 }

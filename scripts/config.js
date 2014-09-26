@@ -30,18 +30,12 @@ require.config({
         "jquery": "vendors/jquery/dist/jquery", // export: $
         'domReady': 'vendors/requirejs-domready/domReady',
         'modernizr': 'vendors/modernizr/modernizr',
-        'backbone': 'vendors/backbone/backbone',
-        'underscore': 'vendors/underscore/underscore',
-        'backbone.localstorage': 'vendors/Backbone.localStorage/backbone.localStorage',
         'bootstrap': 'vendors/bootstrap/dist/js/bootstrap.min',
         'chartjs': 'vendors/chartjs/Chart.min', // export: null
-        'onepage-scroll': 'vendors/onepage-scroll/jquery.onepage-scroll.min' // export: null, need css
+        'scrollReveal': 'vendors/scrollReveal.js/dist/scrollReveal.min' // export: null
     },
     shim: {
         'bootstrap': {
-            deps: ['jquery']
-        },
-        'onepage-scroll': {
             deps: ['jquery']
         }
     },
