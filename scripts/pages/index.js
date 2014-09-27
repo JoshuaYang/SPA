@@ -2,7 +2,7 @@ define(['jquery',
 		'joshua/interact/smooth_mousewheel',
 		'bootstrap',
 		'scrollReveal',
-		'domReady!'], 
+		'domReady!'],
 	function($, SmoothMouseWheel){
 
 		$('.scrollReveal').attr('data-scroll-reveal', '');
@@ -22,3 +22,12 @@ define(['jquery',
 	        maxDetail: 40
 		});
 });
+
+function a(){
+	var d =2;
+	var g =2;
+}
+
+
+function dd(){
+}
